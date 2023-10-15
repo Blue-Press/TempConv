@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="converterContainer" id="celciusConverter">
+      <div class="inputContainer">
+        <label for="celciusInput">Enter Celcius</label>
+        <input id="celciusInput" type="number" />
+      </div>
+
+      <button class="runButton" onclick="runConvertCelcius()">Convert</button>
+      <div class="resultContainer">
+        <p class="resultDisplayLabel">Fahrenheit:</p>
+        <p class="resultDisplay" id="fahrenheitResult"></p>
+      </div>
+    </div>
+  </body>
+  <script src="tempconvert.js"></script>
+</html>
