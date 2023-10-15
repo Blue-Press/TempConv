@@ -13,9 +13,14 @@ const convertToFahrenheit = function (c) {
 
 function runConvertCelcius() {
   let enteredCelcius = document.getElementById("celciusInput").value;
-  console.log(enteredCelcius);
   let convertedCelcius = convertToFahrenheit(enteredCelcius);
-  console.log(convertedCelcius);
   let resultContainer = document.getElementById("fahrenheitResult");
+  resultContainer.innerHTML = convertedCelcius;
+}
+
+function runConvertFahrenheit() {
+  let enteredFahrenheit = document.getElementById("fahrenheitInput").value;
+  let convertedCelcius = convertToFahrenheit(enteredFahrenheit);
+  let resultContainer = document.getElementById("celciusResult");
   resultContainer.innerHTML = convertedCelcius;
 }

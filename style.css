@@ -1,6 +1,13 @@
 body {
   background-color: black;
   color: green;
+  font-family: monospace;
+  display: flex;
+  justify-content: center;
+}
+
+.mainContainer {
+  display: flex;
 }
 
 .converterContainer {
@@ -14,15 +21,23 @@ body {
   align-items: center;
 }
 
+.converterContainer h3 {
+  background-color: black;
+}
+
 #celciusConverter {
   background-image: url(anime.gif);
+}
+
+#fahrenheitConverter {
+  background-image: url(anime2.gif);
 }
 
 .inputContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 8.5px;
+  margin-top: 10.5px;
 }
 
 .inputContainer label {
@@ -38,7 +53,6 @@ body {
 .runButton {
   background-color: black;
   color: green;
-  font-family: monospace;
   width: 100px;
   height: 50px;
   margin-top: 80px;

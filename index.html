@@ -7,16 +7,34 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="converterContainer" id="celciusConverter">
-      <div class="inputContainer">
-        <label for="celciusInput">Enter Celcius</label>
-        <input id="celciusInput" type="number" />
-      </div>
+    <div class="mainContainer">
+      <div class="converterContainer" id="celciusConverter">
+        <h3>Convert Celcius To Fahrenheit</h3>
+        <div class="inputContainer">
+          <label for="celciusInput">Enter Celcius</label>
+          <input id="celciusInput" type="number" />
+        </div>
 
-      <button class="runButton" onclick="runConvertCelcius()">Convert</button>
-      <div class="resultContainer">
-        <p class="resultDisplayLabel">Fahrenheit:</p>
-        <p class="resultDisplay" id="fahrenheitResult"></p>
+        <button class="runButton" onclick="runConvertCelcius()">Convert</button>
+        <div class="resultContainer">
+          <p class="resultDisplayLabel">Fahrenheit:</p>
+          <p class="resultDisplay" id="fahrenheitResult"></p>
+        </div>
+      </div>
+      <div class="converterContainer" id="fahrenheitConverter">
+        <h3>Convert Fahrenheit To Celcius</h3>
+        <div class="inputContainer">
+          <label for="fahrenheitInput">Enter Fahrenheit</label>
+          <input id="fahrenheitInput" type="number" />
+        </div>
+
+        <button class="runButton" onclick="runConvertFahrenheit()">
+          Convert
+        </button>
+        <div class="resultContainer">
+          <p class="resultDisplayLabel">Celcius:</p>
+          <p class="resultDisplay" id="celciusResult"></p>
+        </div>
       </div>
     </div>
   </body>
